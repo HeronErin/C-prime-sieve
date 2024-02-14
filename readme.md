@@ -4,9 +4,14 @@ This is a test of how fast I can write a prime sieve, although I am no expert.
 The following is some auto-generated statistics from it running on github actions:
 
 | Test          | Runtime (s)   |
-|500000 @ -O0|0.036106|
+| :---          |          ---: |
+|500000 @ -O0|0.036704|
+|500000 @ -O1|0.037484|
+|500000 @ -O2|0.037448|
+|500000 @ -O3|0.036560|
 
-<sup><i>Generated at 02/14/2024 11:58:52 EST</i></sup>
+<sup><i>Generated at 02/14/2024 12:17:04 EST</i></sup>
+
 
 ## Copyright
 ```

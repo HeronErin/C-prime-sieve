@@ -48,6 +48,7 @@ with open(os.path.dirname(__file__)+"/../readme.md.template", "r") as template:
     with open(os.path.dirname(__file__)+"/../readme.md", "w") as output:
         while (line:=template.readline()) != "| :---          |          ---: |\n":
             output.write(line)
+        output.write(line)
         for test_name, r_time in results:
             output.write(f"|{test_name}|{r_time}|\n")
         output.write(f"\n<sup><i>Generated at {ranAt} EST</i></sup>\n")

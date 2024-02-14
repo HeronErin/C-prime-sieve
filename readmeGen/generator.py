@@ -38,7 +38,10 @@ results = [
         runTest(5_000_000, "-O2"),
         runTest(5_000_000, "-O3"),
         
-        runTest(7_000_000, "-O4"),
+        runTest(10_000_000, "-O0"),
+        runTest(10_000_000, "-O1"),
+        runTest(10_000_000, "-O2"),
+        runTest(10_000_000, "-O3"),
         ]
 
 with open(os.path.dirname(__file__)+"/../historicData.csv", "a") as output:

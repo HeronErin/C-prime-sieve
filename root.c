@@ -1,4 +1,4 @@
-
+#pragma once
 //    All credit to: https://github.com/mochow13/competitive-programming-library/blob/master/Math/Fast%20Integer%20Cube%20and%20Square%20Root.cpp
 //    I do not claim this code.
 

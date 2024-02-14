@@ -12,6 +12,9 @@ jobs:
       - name: Run python script
         run: python readmeGen/generator.py
         
+      - name: Login
+        run: git config --global user.name "actions-user" && git config --local user.email "actions@github.com" 
+
       - name: Commit changes
         run: git commit -am "Auto benchmark at $(date)"
 

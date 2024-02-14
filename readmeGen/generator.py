@@ -28,20 +28,20 @@ results = [
         runTest(500_000, "-O2"),
         runTest(500_000, "-O3"),
 
-        runTest(1_000_000, "-O0"),
-        runTest(1_000_000, "-O1"),
-        runTest(1_000_000, "-O2"),
-        runTest(1_000_000, "-O3"),
+        # runTest(1_000_000, "-O0"),
+        # runTest(1_000_000, "-O1"),
+        # runTest(1_000_000, "-O2"),
+        # runTest(1_000_000, "-O3"),
 
-        runTest(5_000_000, "-O0"),
-        runTest(5_000_000, "-O1"),
-        runTest(5_000_000, "-O2"),
-        runTest(5_000_000, "-O3"),
+        # runTest(5_000_000, "-O0"),
+        # runTest(5_000_000, "-O1"),
+        # runTest(5_000_000, "-O2"),
+        # runTest(5_000_000, "-O3"),
         
-        runTest(10_000_000, "-O0"),
-        runTest(10_000_000, "-O1"),
-        runTest(10_000_000, "-O2"),
-        runTest(10_000_000, "-O3"),
+        # runTest(10_000_000, "-O0"),
+        # runTest(10_000_000, "-O1"),
+        # runTest(10_000_000, "-O2"),
+        # runTest(10_000_000, "-O3"),
         ]
 
 with open(os.path.dirname(__file__)+"/../historicData.csv", "a") as output:
@@ -57,4 +57,7 @@ with open(os.path.dirname(__file__)+"/../readme.md.template", "r") as template:
         for test_name, r_time in results:
             output.write(f"|{test_name}|{r_time}|\n")
         output.write(f"\n<sup><i>Generated at {ranAt} EST</i></sup>\n")
+        for f in os.listdir(os.path.dirname(__file__)+"/../imgs"):
+            output.write(f"![{f}](imgs/{f})\n")
+        
         output.write(template.read())

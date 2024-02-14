@@ -9,7 +9,9 @@ jobs:
     runs-on: ubuntu-latest 
     steps:
       - uses: actions/checkout@v2
-      - name: Run python script
+      - name: Run benchmark script
+        run: python readmeGen/generator.py
+      - name: Run plot gen script
         run: python readmeGen/generator.py
 
       - name: Login

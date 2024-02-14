@@ -59,6 +59,7 @@ with open(os.path.dirname(__file__)+"/../readme.md.template", "r") as template:
         output.write(f"\n<sup><i>Generated at {ranAt} EST</i></sup>\n")
         for f in os.listdir(os.path.join(os.path.dirname(__file__), "..", "imgs")):
             if f == "readme.md": continue
+            f=f.replace(" ", "%20")
             output.write(f"![{f}](imgs/{f})\n")
         
         output.write(template.read())

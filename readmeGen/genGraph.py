@@ -25,7 +25,7 @@ for test in tests:
     plt.xlabel('Date')
     plt.ylabel('Secounds to run benchmark')
 
-    ax.plot(x[test], y[test], label=test)
+    ax.plot(x[test], y[test])
     
     fig.savefig(os.path.join(os.path.dirname(__file__), "..", "imgs", test.strip()+".png"))
     plt.close(fig)

@@ -28,15 +28,17 @@ results = [
         runTest(500_000, "-O2"),
         runTest(500_000, "-O3"),
 
-        # runTest(1_000_000, "-O0"),
-        # runTest(1_000_000, "-O1"),
-        # runTest(1_000_000, "-O2"),
-        # runTest(1_000_000, "-O3"),
+        runTest(1_000_000, "-O0"),
+        runTest(1_000_000, "-O1"),
+        runTest(1_000_000, "-O2"),
+        runTest(1_000_000, "-O3"),
 
-        # runTest(5_000_000, "-O0"),
-        # runTest(5_000_000, "-O1"),
-        # runTest(5_000_000, "-O2"),
-        # runTest(5_000_000, "-O3"),
+        runTest(5_000_000, "-O0"),
+        runTest(5_000_000, "-O1"),
+        runTest(5_000_000, "-O2"),
+        runTest(5_000_000, "-O3"),
+        
+        runTest(7_000_000, "-O4"),
         ]
 
 with open(os.path.dirname(__file__)+"/../historicData.csv", "a") as output:

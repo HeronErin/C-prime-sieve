@@ -18,7 +18,7 @@ jobs:
         run: git config --global user.name "actions-user" && git config --local user.email "actions@github.com" 
 
       - name: Commit changes
-        run: git commit -am "Auto benchmark at $(date)"
+        run: git add . && git commit -am "Auto benchmark at $(date)"
 
       - name: Push changes
         run: git push

@@ -24,9 +24,9 @@ def runTest(extent, flags):
 
 results = [
         runTest(500_000, "-O0"),
-        # runTest(500_000, "-O1"),
-        # runTest(500_000, "-O2"),
-        # runTest(500_000, "-O3"),
+        runTest(500_000, "-O1"),
+        runTest(500_000, "-O2"),
+        runTest(500_000, "-O3"),
 
         # runTest(1_000_000, "-O0"),
         # runTest(1_000_000, "-O1"),

@@ -1,0 +1,22 @@
+name: "Automatically run benchmarks"
+on:
+  schedule:
+  - cron: "0 0 * * *" # At the end of every day
+  workflow_dispatch:
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest 
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run python script
+        run: python readmeGen/generator.py
+        
+      - name: Commit changes
+        run: git commit -am "Auto benchmark at $(date)"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+            

@@ -25,7 +25,7 @@ with open(os.path.dirname(__file__)+"/../historicData.csv", "r") as output:
     for line in output.readlines():
         if not line.strip(): continue
         date, test, comptime = line.strip().split(",")
-        timeOfRun = datetime.datetime.strptime(date.split(" ")[0], '%m/%d/%Y')
+        timeOfRun = datetime.datetime.strptime(date, '%d/%m/%y')
         if not test in x:
             x[test] = []
             y[test] = []

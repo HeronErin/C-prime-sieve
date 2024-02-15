@@ -23,7 +23,7 @@ from datetime import datetime, timedelta
 from pytz import timezone
 
 eastern = timezone('US/Eastern')
-ranAt = datetime.now(tz=eastern).strftime('%m/%d/%Y %H:%M:%S')
+ranAt = datetime.now(tz=eastern).strftime('%d/%m/%y')
 
 
 def runTest(extent, flags):

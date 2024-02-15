@@ -1,28 +1,28 @@
 # Prime number sieve in C
 
-This is a test of how fast I can write a prime sieve, although I am no expert. 
-The following is some auto-generated statistics from it running on github actions:
+This is a test of how fast I can write a prime sieve, although I am no expert. Then I added in some Github Actions and Python code to run these tests everyday, and generate graphs of the preformance over time.
+The following is some auto-generated statistics from the last test ran:
 
 | Test          | Runtime (s)   |
 | :---          |          ---: |
-|500000 @ -O0|0.035937|
-|500000 @ -O1|0.036134|
-|500000 @ -O2|0.036657|
-|500000 @ -O3|0.036618|
-|1000000 @ -O0|0.099029|
-|1000000 @ -O1|0.101220|
-|1000000 @ -O2|0.101902|
-|1000000 @ -O3|0.101726|
-|5000000 @ -O0|4.138904|
-|5000000 @ -O1|4.660036|
-|5000000 @ -O2|4.671468|
-|5000000 @ -O3|4.916258|
-|10000000 @ -O0|17.235907|
-|10000000 @ -O1|16.475015|
-|10000000 @ -O2|16.837329|
-|10000000 @ -O3|16.321640|
+|500000 @ -O0|0.036863|
+|500000 @ -O1|0.036839|
+|500000 @ -O2|0.037248|
+|500000 @ -O3|0.037666|
+|1000000 @ -O0|0.100668|
+|1000000 @ -O1|0.103444|
+|1000000 @ -O2|0.104740|
+|1000000 @ -O3|0.107887|
+|5000000 @ -O0|4.957554|
+|5000000 @ -O1|5.157626|
+|5000000 @ -O2|5.332703|
+|5000000 @ -O3|4.848665|
+|10000000 @ -O0|16.560132|
+|10000000 @ -O1|16.330252|
+|10000000 @ -O2|16.799785|
+|10000000 @ -O3|17.099363|
 
-<sup><i>Generated at 02/14/2024 13:44:45 EST</i></sup>
+<sup><i>Generated at 02/14/2024 19:57:15 EST</i></sup>
 ## Historic preformence data:![5000000%20@%20-O1.png](imgs/5000000%20@%20-O1.png)
 ![1000000%20@%20-O1.png](imgs/1000000%20@%20-O1.png)
 ![10000000%20@%20-O2.png](imgs/10000000%20@%20-O2.png)

@@ -1,5 +1,9 @@
 # Prime number sieve in C
 
+> [!WARNING]  
+> Discontinued. Ran from 02/15/24	until 08/15/24 and contains 6 mounths of data.
+
+
 This is a test of how fast I can write a prime sieve, although I am no expert. Then I added in some Github Actions and Python code to run these tests everyday, and generate graphs of the preformance over time.
 The following is some auto-generated statistics from the last test ran:
 
